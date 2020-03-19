@@ -4,11 +4,49 @@ This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
 If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
 
+
+
 ## Running the application in dev mode
 
 You can run your application in dev mode that enables live coding using:
-```
+
+Command- 
+
 ./mvnw quarkus:dev
+
+Database- Postgres
+
+REST API endpoints and JSON Request Body Sample-
+
+Port- 8000
+
+Rest API endpoints - 
+
+Read Opeartion - GET
+Url - http://localhost:8000/user/{user_id} 
+Ex -http://localhost:8000/user/1001
+
+POST-
+http://localhost:8000/user
+Content-Type : application/json
+
+{
+    "userId": "1004",
+    "userName": "GLIndia",
+    "userDetails": "Software"
+}
+
+PUT-
+http://localhost:8000/user
+Content-Type : application/json
+
+{
+    "userId": "1004",
+    "userName": "GLIndia",
+    "userDetails": "Software"
+}
+
+
 ```
 
 ## Packaging and running the application
